@@ -36,20 +36,20 @@ do
   (time ./knapsack_O0 input) >/dev/null 2>>test_results.log
 done
 
-# Compile with optimization level 4 (-O4)
+# Compile with optimization level 3 (-O3)
 
-g++ -o knapsack_O4 -O4 knapsack.cpp
+g++ -o knapsack_O3 -O3 knapsack.cpp
 
 echo "===============" >> test_results.log
 
-# Test O4
-echo 'Testing knapsack (Optimization O4)...'
-echo 'Knapsack (Optimization O4)' >> test_results.log
+# Test O3
+echo 'Testing knapsack (Optimization O3)...'
+echo 'Knapsack (Optimization O3)' >> test_results.log
 
 for i in {1..5}
 do
   echo "Pass $i"
-  (time ./knapsack_O4 input) >/dev/null 2>>test_results.log
+  (time ./knapsack_O3 input) >/dev/null 2>>test_results.log
 done
 
 echo "===============" >> test_results.log
@@ -96,6 +96,6 @@ less test_results.log
 rm -r $DIR
 
 # Hey, you made it to the end!  If you are actually reading this, cool trick: you can run this really easily, just do
-# curl https://github.com/legolots/General/master/run.sh | bash
+# curl https://raw.githubusercontent.com/legolots/General/master/run.sh | bash
 # on your desired machine.
 # Credit: Luke D'Alfonzo for source
