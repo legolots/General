@@ -96,6 +96,6 @@ less test_results.log
 rm -r $DIR
 
 # Hey, you made it to the end!  If you are actually reading this, cool trick: you can run this really easily, just do
-# curl https://raw.githubusercontent.com/pokemonmegaman/hw0helper/master/run.sh | bash
+# curl https://github.com/legolots/General/master/run.sh | bash
 # on your desired machine.
 # Credit: Luke D'Alfonzo for source
