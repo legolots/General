@@ -50,7 +50,7 @@ for i in {1..5}
 do
   echo "Pass $i"
   #(time ./knapsack_O3 input) >/dev/null 2>>test_results.log
-  (perf stat -B -e cycles ./knapsack_03 input >/dev/null 2 >>test_results.log
+  (perf record -a ./knapsack_03 input >/dev/null 2 >>test_results.log
 done
 
 echo "===============" >> test_results.log
